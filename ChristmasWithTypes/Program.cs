@@ -4,20 +4,24 @@ namespace ChristmasWithTypes
 {
     class Program
     {
+        private const string V = "no plague";
+        private const string W = "snow";
+        private const string Y = "and win lottery";
+
         static void Main(string[] args)
         {
             var xmas = new Christmas();
 
             var xmasDay = Christmas.Day.Thursday;
 
-            //TODO set Santa's name to Kris Kringle
-            xmas.Santa = null;
+            //DONE set Santa's name to Kris Kringle
+            xmas.Santa = "Kris Kringle";
 
-            //TODO Insert 3 presents you would like for xmas.  They must be strings
-            xmas.Presents =  new string[3]{ }; 
+            //DONE Insert 3 presents you would like for xmas.  They must be strings
+            xmas.Presents =  new string[3]{ V, W, Y }; 
 
-            //TODO Set the TreeHeight to 10
-            xmas.TreeHeight = null;
+            //DONE Set the TreeHeight to 10
+            xmas.TreeHeight = 10;
 
             Console.WriteLine($"This year christmas falls on {xmasDay} \n");
             Console.WriteLine($"Our tree will be {xmas.TreeHeight} feet high \n");
